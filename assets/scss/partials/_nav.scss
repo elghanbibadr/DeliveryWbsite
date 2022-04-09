@@ -1,0 +1,89 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: $box-shadow;
+    position: fixed;
+    right: 0;
+    left: 0;
+    padding: 1rem 1.4rem;
+    @include desktop{
+        justify-content: space-around;
+    }
+    flex-wrap: wrap;
+    &__title{
+        margin-top: .3rem;
+    }
+    &__hamburger{
+        height: 1.5em;
+        width:1.5rem;
+        @include desktop{
+            display: none;
+        }
+    }
+    &__collapsible{
+        width: 100%;
+        svg{
+            height: 1.3rem;
+        }
+          display: none;
+
+        @include desktop{
+            width: auto;
+            display: block;
+            svg{
+                margin-top: 9px;
+                margin-left: 1rem;
+            }
+        }
+    }
+    &__list{
+        @include desktop{
+            display: inline-flex;
+            position: relative;
+            bottom: 11%;
+            li{
+                margin-inline:1.2rem;
+            }
+          
+        }
+    }
+    &__btn{
+        display: none;
+        @include desktop{
+            display: block;
+        }
+    }
+    svg,&__btn,&__hamburger{
+        cursor: pointer;
+    }
+    // collapsible
+    @media (max-width:$desktop){
+
+        .showList{
+            display: flex;
+            justify-content:space-evenly;
+            position: inherit;
+            box-shadow: $box-shadow;
+            top:4rem;
+            padding-left: 4rem;
+            border-radius: 40px;
+            margin-top: 1rem;
+            width: 70%;
+             left: 0; 
+             right: 0; 
+           margin-inline: auto;
+            ul{
+                text-align: center;
+            }
+            li{
+                margin-block: 1.7rem;
+                &:last-child{
+                    margin-left: 12px;
+                }
+            }
+            svg{
+                margin-top: 1.6rem;
+            }
+        }
+    }
+}
