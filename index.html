@@ -7,6 +7,9 @@
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/scss/style.css">
+        <!--=============== CSS ANIMATION LIBRARY ===============-->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
         <title>Responsive website delivery</title>
     </head>
@@ -28,17 +31,29 @@
             </div>
             <button class="nav__btn btn btn--primary">Order Now</button>
             </nav>
+
         </header>
 
         <main class="main">
             <!--=============== HOME ===============-->
-            <section class="home section" id="home">
-            
+            <section class="home grid grid--cls2 section" id="home">
+             <img src="/assets/img/home-ilustration.svg" alt="image of a delivery guy" class="home__img">
+             <div class="home__content">
+                 <h1 class="home__title">order products <br> faster easier</h1>
+                 <p class="home__desc">Order your favorite foods at any time and we will deliver them right to where you are.
+                </p>
+                <button class="home__btn btn btn--primary">Get Started</button>
+             </div>
             </section>
-
             <!--=============== ABOUT ===============-->
-            <section class="about section container" id="about">
-                
+            <section class="about grid grid--cls2 section container" id="about">
+                <img src="/assets/img/about-ilustration.svg" alt="image of delivery team" class="about__img"  data-aos="fade-right">
+                <div class="about__content"  data-aos="fade-left">
+                    <h2 class="about__title">Find Out A Little More <br> About Us</h2>
+                    <p class="about__desc">We are a company dedicated to the distribution of products by delivery 
+                        to your home or to the place where you are, with the best quality of delivery.
+                    </p>
+                </div>
             </section>
 
             <!--=============== SECURITY ===============-->
@@ -72,5 +87,10 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
+         <!--=============== ANIMATION JS ===============-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     </body>
 </html>

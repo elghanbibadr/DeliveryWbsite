@@ -5,3 +5,12 @@
 @import './partials/grid';
 @import './partials/btn';
 @import './partials/nav';
+@import './partials/home';
+.about{
+    @include desktop{
+        margin-top: 10rem;
+    }
+&__img{
+     grid-area: 1/1/1/2;
+}
+}

@@ -1,12 +1,14 @@
+ .expandheader{
+     @media (max-width:$desktop){
+         height: 50vh;
+     }
+ }
 .nav{
     display: flex;
     justify-content: space-between;
     box-shadow: $box-shadow;
-    position: fixed;
-    right: 0;
-    left: 0;
-    padding: 1rem 1.4rem;
-    @include desktop{
+    padding: 1rem ;
+    @include desktopLarge{
         justify-content: space-around;
     }
     flex-wrap: wrap;
@@ -14,6 +16,7 @@
         margin-top: .3rem;
     }
     &__hamburger{
+        margin-top: 5px;
         height: 1.5em;
         width:1.5rem;
         @include desktop{
@@ -26,6 +29,12 @@
             height: 1.3rem;
         }
           display: none;
+          a{
+              transition: color .5s linear;
+          }
+           a:hover{
+            color: #606060;
+          }
 
         @include desktop{
             width: auto;
@@ -49,7 +58,7 @@
     }
     &__btn{
         display: none;
-        @include desktop{
+        @include desktopLarge{
             display: block;
         }
     }
@@ -62,12 +71,12 @@
         .showList{
             display: flex;
             justify-content:space-evenly;
-            position: inherit;
+            position: absolute;
             box-shadow: $box-shadow;
             top:4rem;
             padding-left: 4rem;
             border-radius: 40px;
-            margin-top: 1rem;
+            margin-top: 2rem;
             width: 70%;
              left: 0; 
              right: 0; 
@@ -86,4 +95,12 @@
             }
         }
     }
+    // fixed nav
+}
+.fixNav{
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    background-color: white;
+    right: 0;
 }

@@ -5,11 +5,13 @@
 }
 html{
     font-size: 100%;
+    scroll-behavior: smooth;
 }
 body{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     letter-spacing: 0.2px;
+    height: 300vh;
 }
 ul{
     list-style: none;

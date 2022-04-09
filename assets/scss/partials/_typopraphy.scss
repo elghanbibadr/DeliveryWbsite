@@ -4,9 +4,11 @@
 h1,h2,h3,h4,h5,h6{
     color: $textHeading;
     text-transform: capitalize;
+    
 }
 h1{
     font-size: 1.9rem;
+    line-height:3rem;
     @include tablette{
         font-size: 2.2rem;
     }
@@ -23,4 +25,9 @@ h2{
 }
 h3{
     font-size: 1.3rem;
+}
+p{
+    color: $textColor;
+    font-size: 1.1rem;
+    line-height: 1.4;
 }
