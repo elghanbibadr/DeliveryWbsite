@@ -1,0 +1,12 @@
+{
+  "name": "responsive-website-delivery-start-project-from-scratch",
+  "version": "1.0.0",
+  "description": "- Website Delivery, using HTML, Sass and JavaScript. - Includes a dark and light mode. - Color customization. - Developed first with the Mobile First methodology, then for desktop. - Compatible with all mobile devices and with a beautiful and pleasant user interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
