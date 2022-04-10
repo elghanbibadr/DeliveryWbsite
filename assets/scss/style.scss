@@ -6,17 +6,49 @@
 @import './partials/btn';
 @import './partials/nav';
 @import './partials/home';
-.about{
-    @include desktop{
-        margin-top: 10rem;
-    }
-&__img{
-     grid-area: 1/1/1/2;
-}
-}
-.security{
+@import './partials/about+security';
+.services{
     margin-top: 4rem;
-    @include desktop{
-        margin-top: 10rem;
+
+    h1{
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+        // @include desktop{
+        //     margin-top: 8rem;
+        // }
     }
+    text-align: center;
+    &__card{
+        margin: 2rem;
+       width: 70%;
+       margin-inline: auto;
+       @include desktop{
+           width: 80%;
+       }
+       @include desktopLarge{
+           width: 100%;
+       }
+       box-shadow: $box-shadow;
+       padding: 2rem ;
+    }
+    &__img{
+          width: 50%;  
+          margin-block: 2rem;
+    }
+    &__more-info{
+        margin-block: 1rem;
+        cursor: pointer;
+    }
+    .last{
+        @include desktop{
+            width: 40%;
+
+        }
+        @include desktopLarge{
+            width: 100%;
+            grid-column: span 1;
+        }
+        grid-column: span 2;
+    }
+   
 }

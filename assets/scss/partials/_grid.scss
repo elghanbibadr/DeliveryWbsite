@@ -7,7 +7,12 @@
         grid-template-columns: 1fr 1fr;
     }
     .grid--cls3{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: 1fr 1fr;
+       
+        @include desktopLarge{
+            grid-template-columns: 1fr 1fr 1fr;
+        }
     }
     .grid--cls5{
         grid-template-columns: repeat(5,1fr);

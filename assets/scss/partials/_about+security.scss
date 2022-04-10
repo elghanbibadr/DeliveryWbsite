@@ -1,0 +1,14 @@
+.about{
+    @include desktop{
+        margin-top: 10rem;
+    }
+&__img{
+     grid-area: 1/1/1/2;
+}
+}
+.security{
+    margin-top: 4rem;
+    @include desktop{
+        margin-top: 10rem;
+    }
+}
