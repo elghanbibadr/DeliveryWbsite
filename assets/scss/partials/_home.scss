@@ -1,10 +1,16 @@
 main{
-    padding: 2rem;
+   
+    padding:1rem;
+    zoom: 0.9;
+    @include desktop{
+        zoom: 1;
+    }
     @include desktopLarge{
         padding-inline:5rem;
     }
 }
-.home,.about{
+
+.home,.about,.security{
     margin-top: 4rem;
     &__img{
         width: 100%;

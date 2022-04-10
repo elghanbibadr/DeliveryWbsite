@@ -15,6 +15,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   letter-spacing: 0.2px;
+  overflow-x: hidden;
   height: 300vh;
 }
 
@@ -228,6 +229,7 @@ p {
             box-shadow: 0 0 10px rgba(204, 204, 204, 0.571);
     top: 4rem;
     padding-left: 4rem;
+    background-color: white;
     border-radius: 40px;
     margin-top: 2rem;
     width: 70%;
@@ -258,7 +260,14 @@ p {
 }
 
 main {
-  padding: 2rem;
+  padding: 1rem;
+  zoom: 0.9;
+}
+
+@media (min-width: 800px) {
+  main {
+    zoom: 1;
+  }
 }
 
 @media (min-width: 1020px) {
@@ -267,11 +276,11 @@ main {
   }
 }
 
-.home, .about {
+.home, .about, .security {
   margin-top: 4rem;
 }
 
-.home__img, .about__img {
+.home__img, .about__img, .security__img {
   width: 100%;
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -279,7 +288,7 @@ main {
   grid-area: 1/2/1/3;
 }
 
-.home__content, .about__content {
+.home__content, .about__content, .security__content {
   margin-block: 2rem;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -288,7 +297,7 @@ main {
       justify-self: center;
 }
 
-.home__content p, .about__content p {
+.home__content p, .about__content p, .security__content p {
   margin-block: 1rem;
   width: 50ch;
 }
@@ -304,5 +313,15 @@ main {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-area: 1/1/1/2;
+}
+
+.security {
+  margin-top: 4rem;
+}
+
+@media (min-width: 800px) {
+  .security {
+    margin-top: 10rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
