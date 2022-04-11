@@ -501,4 +501,42 @@ main {
       justify-self: center;
   margin-block: 1.5rem;
 }
+
+.footer {
+  background-color: #fee59a;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+@media (min-width: 800px) {
+  .footer {
+    padding-inline: 5rem;
+  }
+}
+
+@media (min-width: 1020px) {
+  .footer {
+    padding-inline: 10rem;
+  }
+}
+
+.footer__lists {
+  margin-block: 2rem;
+}
+
+.footer ul li {
+  color: #939393;
+  cursor: pointer;
+  margin-block: 8px;
+  text-transform: capitalize;
+}
+
+.footer .media {
+  display: inline;
+}
+
+.footer .media img {
+  height: 1.5rem;
+  margin-left: 0.8rem;
+}
 /*# sourceMappingURL=style.css.map */
