@@ -1,0 +1,44 @@
+.app{
+    margin-top: 10rem;
+    @include desktop{
+        &__img{
+            grid-area: 1/1/1/2 !important;
+            margin-top: 3rem;
+        }
+    }
+    &__content{
+        text-align: center;
+        @include desktop{
+            text-align: left;
+            margin-left: 3rem;
+            width: 50ch;
+           
+        }
+        p{
+            width: auto;
+            margin-block: 2rem;
+        }
+    }
+    &__btns{
+        // display: flex;
+        // jus
+        display: inline-flex;
+        img{
+            height: 22px;
+            margin-left: 10px;
+             position: relative;
+             top: 0.2rem;
+            transform: scale(1.2);
+
+        }
+    }
+     &__btn{
+     font-size: 1.2rem;
+     }
+    .googlePlay{
+        margin-left: 6px;
+        img{
+            transform: scale(0.9);
+        }
+    }
+}

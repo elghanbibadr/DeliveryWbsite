@@ -8,29 +8,4 @@
 @import './partials/home';
 @import './partials/about+security';
 @import "./partials/services";
-.app{
-    margin-top: 10rem;
-    &__img{
-        grid-area: 1/1/1/2 !important;
-    }
-    &__btns{
-        display: flex;
-        img{
-            height: 22px;
-            margin-left: 10px;
-             position: relative;
-             top: 0.2rem;
-            transform: scale(1.2);
-
-        }
-    }
-     &__btn{
-     font-size: 1.2rem;
-     }
-    .googlePlay{
-        margin-left: 6px;
-        img{
-            transform: scale(0.9);
-        }
-    }
-}
+@import './partials/app';
