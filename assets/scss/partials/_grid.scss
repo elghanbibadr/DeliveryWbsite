@@ -14,10 +14,10 @@
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: none;
         }
-        .grid--cls3--simple{
-            grid-template-columns: 1fr 1fr 1fr;
-        }
     }
+    .grid--cls3--simple{
+            grid-template-columns: 3fr auto 1fr;
+        }
     .grid--cls5{
         grid-template-columns: repeat(5,1fr);
         

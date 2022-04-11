@@ -16,7 +16,10 @@ body {
   font-size: 1rem;
   letter-spacing: 0.2px;
   overflow-x: hidden;
-  height: 700vh;
+}
+
+.container {
+  padding-inline: 1rem;
 }
 
 ul {
@@ -101,9 +104,9 @@ p {
 }
 
 @media (min-width: 800px) {
-  .grid--cls3 .grid--cls3--simple {
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+  .grid--cls3--simple {
+    -ms-grid-columns: 3fr auto 1fr;
+        grid-template-columns: 3fr auto 1fr;
   }
   .grid--cls5 {
     -ms-grid-columns: (1fr)[5];
@@ -403,6 +406,7 @@ main {
 
 .app {
   margin-top: 10rem;
+  margin-bottom: 7rem;
 }
 
 @media (min-width: 800px) {
@@ -458,5 +462,43 @@ main {
 .app .googlePlay img {
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
+}
+
+.contact {
+  margin-block: 7rem;
+}
+
+.contact__heading {
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+  .contact__heading {
+    text-align: left;
+    margin-left: 3rem;
+  }
+}
+
+.contact__heading p {
+  margin-block: 1.2rem;
+}
+
+.contact__footer {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.contact__footer .contact-info {
+  margin-block: 0.5rem;
+}
+
+.contact__footer p, .contact__footer h3 {
+  display: inline;
+}
+
+.contact__btn {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin-block: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
