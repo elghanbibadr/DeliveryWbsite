@@ -1,19 +1,19 @@
 .btn{
-    padding: 12px 1.2rem;
-    border-radius: 20px;
+    padding: 15px 1.4rem;
+    border-radius:30px;
     border: 0;
     outline: none;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1rem;
     text-transform: capitalize;
     cursor: pointer;
 }
 .btn--primary{
     background-color: $btnColor;
-    color:$textHeading;
-    box-shadow: 0 0  3px $btnColor;
+    color:#f0f0f0;
+    box-shadow: 0 0 4px 1px #444;
     transition: .4s linear;
     &:hover{
-        background-color:#f8d670;
+        background-color:#222;
     }
 }
