@@ -3,8 +3,8 @@
 
 &__heading{
    text-align: center;
-   @include desktop{
-       text-align: left;
+   @include desktopLarge{
+      text-align: left;
        margin-left: 3rem;
    }
    p{

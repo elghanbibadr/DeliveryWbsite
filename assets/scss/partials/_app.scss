@@ -8,7 +8,7 @@
     }
     &__content{
         text-align: center;
-        @include desktop{
+        @include desktopLarge{
             text-align: left;
             margin-left: 3rem;
             width: 50ch;
