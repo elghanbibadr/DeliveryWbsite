@@ -1,0 +1,2 @@
+const header=document.querySelector("header"),nav=document.querySelector(".nav"),navCollapsible=document.querySelector(".nav__collapsible"),hamburger=document.querySelector(".nav__hamburger");function showMenu(){navCollapsible.classList.toggle("showList"),header.classList.toggle("expandheader")}function fixNav(){window.scrollY>0?nav.classList.add("fixNav"):nav.classList.remove("fixNav")}window.addEventListener("scroll",fixNav),hamburger.addEventListener("click",showMenu);
+//# sourceMappingURL=index.9d99278e.js.map

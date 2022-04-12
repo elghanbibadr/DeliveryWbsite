@@ -10,31 +10,4 @@
 @import "./partials/services";
 @import './partials/app';
 @import './partials/contact';
-.footer{
-    background-color:$footerBg;
-    @include desktop{
-        padding-inline: 5rem;
-    }
-    @include desktopLarge{
-  padding-inline: 10rem;
-    }
-    margin-top: 4rem;
-    padding: 1rem;
-    &__lists{
-        margin-block: 2rem;
-    }
-    ul li{
-        color: $textColor;
-        cursor: pointer;
-        margin-block: 8px;
-        text-transform: capitalize;
-       
-    }
-    .media{
-        display: inline;
-        img{
-            height: 1.5rem;
-            margin-left: 0.8rem;
-        }
-    }
-}
+@import './partials/footer';
