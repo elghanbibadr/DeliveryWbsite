@@ -14,13 +14,14 @@ else nav.classList.remove('fixNav');
 }
 window.addEventListener('scroll',fixNav)
 hamburger.addEventListener('click',showMenu);
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
-
-/*=============== CHANGE BACKGROUND HEADER ===============*/
 
 
 /*=============== SHOW SCROLL UP ===============*/
-
-
-/*=============== DARK LIGHT THEME ===============*/
+const links=document.querySelectorAll('.nav__link');
+links.forEach(link=>link.addEventListener('click',(e)=>{
+    e.preventDefault();
+    let id=e.target.getAttribute('href');
+    // console.log(id)
+    document.querySelector(id).scrollIntoView({behavior:'smooth'});
+}))
